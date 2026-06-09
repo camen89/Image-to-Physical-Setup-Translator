@@ -16,7 +16,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageOps
 
 
 st.set_page_config(
-    page_title="イメージ外側構築ツール",
+    page_title="Image to Physical Setup Translator",
     page_icon="frame_with_picture",
     layout="wide",
 )
