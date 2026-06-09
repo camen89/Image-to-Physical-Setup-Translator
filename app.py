@@ -1131,7 +1131,7 @@ def render_setup(data: dict[str, Any], maps: dict[str, Image.Image]) -> None:
 
 
 def main() -> None:
-    st.title("イメージ外側構築ツール")
+    st.title("Image to Physical Setup Translator")
     st.caption("AI生成画像の「存在しない外側」を、明るさ・深度・影から物理セットとして推定するMVP")
 
     if "generated_image" not in st.session_state:
