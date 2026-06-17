@@ -1131,7 +1131,7 @@ def render_setup(data: dict[str, Any], maps: dict[str, Image.Image]) -> None:
 
 
 def main() -> None:
-    st.title("Image to Physical Setup Translator")
+    st.title("Image to Physical Setup")
     st.caption("AI生成画像の「存在しない外側」を、明るさ・深度・影から物理セットとして推定するMVP")
 
     if "generated_image" not in st.session_state:
@@ -1203,7 +1203,7 @@ def main() -> None:
             source_label = "入力画像"
 
     if image is None:
-        st.info("画像を生成またはアップロードしてください。中央のフレームから、外側にあるはずの空間を推定します。")
+        st.info("画像を生成またはアップロードしてください。")
         return
 
     analysis, maps = analyze_image(image)
